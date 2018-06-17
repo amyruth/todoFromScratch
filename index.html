@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ToDos</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<div class="container">
+		<form class="todo-form">
+			<h1>Some Things To Do</h1>
+			
+			<label class="cta">Add a task:</label><br>
+			<input type="text" class="taskEntry" name="add">
+			
+			<button class="addToList" type="submit">Add</button>
+
+		</form>
+		<div class="listArea hide">
+			<ul class="todoList">
+				<!-- todos go here -->
+			</ul>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

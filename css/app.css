@@ -1,0 +1,52 @@
+body{
+	/* Photo by freestocks.org from Pexels */
+	background: no-repeat url('../img/blur-close-up-handwriting-131979.jpg');
+	background-size: cover;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1em;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+.cta{
+	font-size: 24px;
+	font-weight: 800;
+}
+.todo-form{
+	width: 50%;
+	height: 50%;
+	background-color: rgba(161, 130, 116, 0.6);
+	border-radius: 5px;
+	align-self: center;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 120px;
+	padding: 20px;
+	letter-spacing: 3px;
+}
+.addToList{
+	padding: 0 30px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.taskEntry{
+	width: 60%;
+	margin-top: 20px;
+}
+.listArea{
+	padding: 20px;
+	align-self: center;
+	width: 50%;
+	background-color:rgba(161, 130, 116, 0.6);
+	margin-top: 10px;
+	
+	font-size: 22px;
+}
+
+.hide{
+	display: none;
+}
