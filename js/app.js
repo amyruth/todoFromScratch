@@ -1,7 +1,22 @@
 const addButton = document.querySelector('.addToList');
 
 
-function addTodo(){
+// function addTodo() {
+// 	const todoList = document.querySelector('.todoList');
+// 	const listArea = document.querySelector('.listArea');
+// 	const task = document.querySelector('.taskEntry');
+// 	let item = task.value;
+// 	let listItem = document.createElement('li');
+// 	listItem.textContent = item;
+// 	todoList.appendChild(listItem);
+// 	task.value = '';
+// 	if (todoList.childElementCount === 1) {
+// 		listArea.classList.remove('hide');
+// 		console.log('reveal');
+// 	}
+// }
+
+const addTodo = () => {
 	const todoList = document.querySelector('.todoList');
 	const listArea = document.querySelector('.listArea');
 	const task = document.querySelector('.taskEntry');
@@ -9,15 +24,14 @@ function addTodo(){
 	let listItem = document.createElement('li');
 	listItem.textContent = item;
 	todoList.appendChild(listItem);
-	task.value = "";
-	if(todoList.childElementCount === 1){
+	task.value = '';
+	if (todoList.childElementCount === 1) {
 		listArea.classList.remove('hide');
-		console.log('reveal');
+		console.log('1st reveal');
 	}
 };
 
-
-addButton.addEventListener('click', function(e){
+addButton.addEventListener('click', function (e) {
 	e.preventDefault();
 	addTodo();
 });

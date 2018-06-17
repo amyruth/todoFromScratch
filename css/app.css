@@ -36,15 +36,16 @@ body{
 .taskEntry{
 	width: 60%;
 	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .listArea{
 	padding: 20px;
 	align-self: center;
 	width: 50%;
 	background-color:rgba(161, 130, 116, 0.6);
-	margin-top: 10px;
-	
-	font-size: 22px;
+	margin-top: 10px;	
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .hide{
