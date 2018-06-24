@@ -25,20 +25,16 @@ const addTodo = () => {
 	listItem.textContent = item;
 	todoList.appendChild(listItem);
 	task.value = '';
+
+	listItem.removeTodo;
+
 	if (todoList.childElementCount === 1) {
 		listArea.classList.remove('hide');
 		console.log('1st reveal');
 	}
 };
 
-addButton.addEventListener('click', function (e) {
-	e.preventDefault();
-	addTodo();
-});
-
-// check body for a click, if the click target is an li element, remove that element
-// also if no li elements in list hide the list
-document.querySelector('body').addEventListener('click', function(e){
+const removeTodo = document.querySelector('body').addEventListener('click', function(e){
 	if(e.target.tagName.toLowerCase() === 'li'){
 		e.target.remove();
 	}
@@ -47,14 +43,21 @@ document.querySelector('body').addEventListener('click', function(e){
 	}
 });
 
+addButton.addEventListener('click', function (e) {
+	e.preventDefault();
+	addTodo();
+});
 
+
+// check body for a click, if the click target is an li element, remove that element
+// also if no li elements in list hide the list
 
 // FUNCTIONS TO MAKE
 // addTodo DONE
 // removeTodo DONE
 // strikeTodo
 
-// FEATURES
+// POSSIBLE FEATURES
 // check mark strikethrough when complete
 // multiple Lists
 // local storage?
