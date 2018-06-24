@@ -1,27 +1,27 @@
-const addButton = document.querySelector('.addToList');
-
-
 // function addTodo() {
-// 	const todoList = document.querySelector('.todoList');
-// 	const listArea = document.querySelector('.listArea');
-// 	const task = document.querySelector('.taskEntry');
-// 	let item = task.value;
-// 	let listItem = document.createElement('li');
-// 	listItem.textContent = item;
-// 	todoList.appendChild(listItem);
-// 	task.value = '';
-// 	if (todoList.childElementCount === 1) {
-// 		listArea.classList.remove('hide');
-// 		console.log('reveal');
-// 	}
-// }
-
+	// 	const todoList = document.querySelector('.todoList');
+	// 	const listArea = document.querySelector('.listArea');
+	// 	const task = document.querySelector('.taskEntry');
+	// 	let item = task.value;
+	// 	let listItem = document.createElement('li');
+	// 	listItem.textContent = item;
+	// 	todoList.appendChild(listItem);
+	// 	task.value = '';
+	// 	if (todoList.childElementCount === 1) {
+		// 		listArea.classList.remove('hide');
+		// 		console.log('reveal');
+		// 	}
+		// }
+const addButton = document.querySelector('.addToList');
+const todo = document.querySelector('li');
+const todoList = document.querySelector('#todoList');
+const listArea = document.querySelector('.listArea');
+		
 const addTodo = () => {
-	const todoList = document.querySelector('.todoList');
-	const listArea = document.querySelector('.listArea');
 	const task = document.querySelector('.taskEntry');
 	let item = task.value;
 	let listItem = document.createElement('li');
+	listItem.classList.add('todoItem');
 	listItem.textContent = item;
 	todoList.appendChild(listItem);
 	task.value = '';
@@ -36,10 +36,32 @@ addButton.addEventListener('click', function (e) {
 	addTodo();
 });
 
+// check body for a click, if the click target is an li element, remove that element
+// also if no li elements in list hide the list
+document.querySelector('body').addEventListener('click', function(e){
+	if(e.target.tagName.toLowerCase() === 'li'){
+		e.target.remove();
+	}
+	if(todoList.getElementsByTagName('li').length === 0){
+		listArea.classList.add('hide');
+	}
+});
+
+
+
 // FUNCTIONS TO MAKE
-// addTodo
-// removeTodo
+// addTodo DONE
+// removeTodo DONE
 // strikeTodo
+
+// FEATURES
+// check mark strikethrough when complete
+// multiple Lists
+// local storage?
+//todo expands to add notes
+// add a date/reminder
+// checkbox batch delete
+// email a list/send to calendar
 
 
 
