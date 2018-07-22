@@ -16,7 +16,7 @@ const addButton = document.querySelector('.addToList');
 const todo = document.querySelector('li');
 const todoList = document.querySelector('#todoList');
 const listArea = document.querySelector('.listArea');
-		
+
 const addTodo = () => {
 	const task = document.querySelector('.taskEntry');
 	let item = task.value;
